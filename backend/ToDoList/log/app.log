@@ -1,0 +1,384 @@
+2025-01-15 00:47:16 - [http-nio-8000-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks/1", parameters={}
+ 2025-01-15 00:47:16 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getTaskById(int)
+ 2025-01-15 00:47:16 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 00:47:16 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [Task(id=1, title=Buy groceries, description=Purchase milk, bread, and eggs, status=PENDING, dueDate= (truncated)...]
+ 2025-01-15 00:47:16 - [http-nio-8000-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 00:49:24 - [http-nio-8000-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/tasks", parameters={}
+ 2025-01-15 00:49:24 - [http-nio-8000-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#createTask(Task)
+ 2025-01-15 00:49:24 - [http-nio-8000-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [Task(id=0, title=Logging, description=Working Dir and file, status=PENDING, dueDate=2025-01-20, crea (truncated)...]
+ 2025-01-15 00:49:24 - [http-nio-8000-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 00:49:24 - [http-nio-8000-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Task(id=4, title=Logging, description=Working Dir and file, status=PENDING, dueDate=2025-01-20, crea (truncated)...]
+ 2025-01-15 00:49:24 - [http-nio-8000-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 00:49:36 - [http-nio-8000-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks", parameters={}
+ 2025-01-15 00:49:36 - [http-nio-8000-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getAllTasks()
+ 2025-01-15 00:49:36 - [http-nio-8000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 00:49:36 - [http-nio-8000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Task(id=1, title=Buy groceries, description=Purchase milk, bread, and eggs, status=PENDING, dueDate (truncated)...]
+ 2025-01-15 00:49:36 - [http-nio-8000-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 00:51:58 - [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+ 2025-01-15 00:51:58 - [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2025-01-15 00:51:58 - [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2025-01-15 00:51:59 - [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2025-01-15 00:51:59 - [RMI TCP Connection(15)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ 2025-01-15 00:51:59 - [RMI TCP Connection(15)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+ 2025-01-15 00:52:05 - [main] INFO  c.learn.ToDoList.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 7140 (F:\Github\ToDoList\backend\ToDoList\target\classes started by Nithin U in F:\Github\ToDoList\backend\ToDoList)
+ 2025-01-15 00:52:05 - [main] INFO  c.learn.ToDoList.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+ 2025-01-15 00:52:08 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+ 2025-01-15 00:52:08 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2025-01-15 00:52:08 - [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.learn.ToDoList.repository.TaskRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+ 2025-01-15 00:52:08 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 156 ms. Found 0 JDBC repository interfaces.
+ 2025-01-15 00:52:08 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+ 2025-01-15 00:52:08 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-01-15 00:52:08 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interface.
+ 2025-01-15 00:52:11 - [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8000 (http)
+ 2025-01-15 00:52:11 - [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+ 2025-01-15 00:52:11 - [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+ 2025-01-15 00:52:11 - [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2025-01-15 00:52:11 - [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5811 ms
+ 2025-01-15 00:52:11 - [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2025-01-15 00:52:12 - [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+ 2025-01-15 00:52:12 - [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-01-15 00:52:13 - [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-01-15 00:52:13 - [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+ 2025-01-15 00:52:15 - [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70ecf57b
+ 2025-01-15 00:52:15 - [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+ 2025-01-15 00:52:15 - [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+ 2025-01-15 00:52:15 - [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.27
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-01-15 00:52:18 - [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-01-15 00:52:18 - [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-01-15 00:52:19 - [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 2025-01-15 00:52:19 - [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+ 2025-01-15 00:52:19 - [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ 2025-01-15 00:52:20 - [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ 2025-01-15 00:52:20 - [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+ 2025-01-15 00:52:20 - [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8000 (http) with context path '/'
+ 2025-01-15 00:52:20 - [main] INFO  c.learn.ToDoList.ToDoListApplication - Started ToDoListApplication in 16.802 seconds (process running for 19.935)
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@677274e7
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@c7cbc2d
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks", parameters={}
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getAllTasks()
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Task(id=1, title=Buy groceries, description=Purchase milk, bread, and eggs, status=PENDING, dueDate (truncated)...]
+ 2025-01-15 00:53:00 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 00:53:08 - [http-nio-8000-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/tasks", parameters={}
+ 2025-01-15 00:53:08 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#createTask(Task)
+ 2025-01-15 00:53:08 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [Task(id=0, title=Demo Task, description=Working Demo Project, status=PENDING, dueDate=2025-01-20, cr (truncated)...]
+ 2025-01-15 00:53:08 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 00:53:08 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Task(id=5, title=Demo Task, description=Working Demo Project, status=PENDING, dueDate=2025-01-20, cr (truncated)...]
+ 2025-01-15 00:53:08 - [http-nio-8000-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 00:53:16 - [http-nio-8000-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks", parameters={}
+ 2025-01-15 00:53:16 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getAllTasks()
+ 2025-01-15 00:53:16 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 00:53:16 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Task(id=1, title=Buy groceries, description=Purchase milk, bread, and eggs, status=PENDING, dueDate (truncated)...]
+ 2025-01-15 00:53:16 - [http-nio-8000-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 00:54:36 - [http-nio-8000-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/tasks/5", parameters={}
+ 2025-01-15 00:54:36 - [http-nio-8000-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#deleteTask(int)
+ 2025-01-15 00:54:36 - [http-nio-8000-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 00:54:36 - [http-nio-8000-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+ 2025-01-15 00:54:36 - [http-nio-8000-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 204 NO_CONTENT
+ 2025-01-15 00:54:43 - [http-nio-8000-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks", parameters={}
+ 2025-01-15 00:54:43 - [http-nio-8000-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getAllTasks()
+ 2025-01-15 00:54:43 - [http-nio-8000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 00:54:43 - [http-nio-8000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Task(id=1, title=Buy groceries, description=Purchase milk, bread, and eggs, status=PENDING, dueDate (truncated)...]
+ 2025-01-15 00:54:43 - [http-nio-8000-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 01:21:56 - [RMI TCP Connection(45)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+ 2025-01-15 01:21:56 - [RMI TCP Connection(45)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2025-01-15 01:21:56 - [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2025-01-15 01:21:56 - [RMI TCP Connection(45)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2025-01-15 01:21:56 - [RMI TCP Connection(45)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ 2025-01-15 01:21:56 - [RMI TCP Connection(45)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+ 2025-01-15 01:22:01 - [main] INFO  c.learn.ToDoList.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 14448 (F:\Github\ToDoList\backend\ToDoList\target\classes started by Nithin U in F:\Github\ToDoList\backend\ToDoList)
+ 2025-01-15 01:22:01 - [main] INFO  c.learn.ToDoList.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+ 2025-01-15 01:22:03 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+ 2025-01-15 01:22:03 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2025-01-15 01:22:03 - [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.learn.ToDoList.repository.TaskRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+ 2025-01-15 01:22:03 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 0 JDBC repository interfaces.
+ 2025-01-15 01:22:03 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+ 2025-01-15 01:22:03 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-01-15 01:22:03 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+ 2025-01-15 01:22:05 - [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8000 (http)
+ 2025-01-15 01:22:05 - [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+ 2025-01-15 01:22:05 - [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+ 2025-01-15 01:22:05 - [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2025-01-15 01:22:05 - [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3535 ms
+ 2025-01-15 01:22:05 - [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2025-01-15 01:22:05 - [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+ 2025-01-15 01:22:05 - [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-01-15 01:22:06 - [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-01-15 01:22:06 - [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+ 2025-01-15 01:22:08 - [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3620eab
+ 2025-01-15 01:22:08 - [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+ 2025-01-15 01:22:08 - [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+ 2025-01-15 01:22:08 - [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.27
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-01-15 01:22:11 - [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-01-15 01:22:11 - [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-01-15 01:22:12 - [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 2025-01-15 01:22:13 - [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+ 2025-01-15 01:22:13 - [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ 2025-01-15 01:22:13 - [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ 2025-01-15 01:22:13 - [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+ 2025-01-15 01:22:14 - [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8000 (http) with context path '/'
+ 2025-01-15 01:22:14 - [main] INFO  c.learn.ToDoList.ToDoListApplication - Started ToDoListApplication in 14.154 seconds (process running for 16.484)
+ 2025-01-15 01:22:21 - [http-nio-8000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2025-01-15 01:22:21 - [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-01-15 01:22:21 - [http-nio-8000-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+ 2025-01-15 01:22:21 - [http-nio-8000-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+ 2025-01-15 01:22:21 - [http-nio-8000-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+ 2025-01-15 01:22:21 - [http-nio-8000-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@f73a7cf
+ 2025-01-15 01:22:21 - [http-nio-8000-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@949f0d
+ 2025-01-15 01:22:21 - [http-nio-8000-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+ 2025-01-15 01:22:21 - [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+ 2025-01-15 01:22:21 - [http-nio-8000-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks", parameters={}
+ 2025-01-15 01:22:21 - [http-nio-8000-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getAllTasks()
+ 2025-01-15 01:22:22 - [http-nio-8000-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 01:22:22 - [http-nio-8000-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[TaskDto(id=1, title=Buy groceries, description=Purchase milk, bread, and eggs, status=PENDING, dueD (truncated)...]
+ 2025-01-15 01:22:22 - [http-nio-8000-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 01:22:28 - [http-nio-8000-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks/1", parameters={}
+ 2025-01-15 01:22:28 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getTaskById(int)
+ 2025-01-15 01:22:28 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 01:22:28 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [TaskDto(id=1, title=Buy groceries, description=Purchase milk, bread, and eggs, status=PENDING, dueDa (truncated)...]
+ 2025-01-15 01:22:29 - [http-nio-8000-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 01:22:42 - [http-nio-8000-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/tasks", parameters={}
+ 2025-01-15 01:22:42 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#createTask(TaskDto)
+ 2025-01-15 01:22:42 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [TaskDto(id=0, title=Demo Task, description=Working Demo Project, status=PENDING, dueDate=2025-01-20, (truncated)...]
+ 2025-01-15 01:22:42 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 01:22:42 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [TaskDto(id=6, title=Demo Task, description=Working Demo Project, status=PENDING, dueDate=2025-01-20, (truncated)...]
+ 2025-01-15 01:22:42 - [http-nio-8000-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 201 CREATED
+ 2025-01-15 01:24:39 - [http-nio-8000-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks", parameters={}
+ 2025-01-15 01:24:39 - [http-nio-8000-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getAllTasks()
+ 2025-01-15 01:24:39 - [http-nio-8000-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 01:24:39 - [http-nio-8000-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[TaskDto(id=1, title=Buy groceries, description=Purchase milk, bread, and eggs, status=PENDING, dueD (truncated)...]
+ 2025-01-15 01:24:39 - [http-nio-8000-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 01:25:03 - [http-nio-8000-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks/6", parameters={}
+ 2025-01-15 01:25:03 - [http-nio-8000-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getTaskById(int)
+ 2025-01-15 01:25:03 - [http-nio-8000-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 01:25:03 - [http-nio-8000-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [TaskDto(id=6, title=Demo Task, description=Working Demo Project, status=PENDING, dueDate=2025-01-20, (truncated)...]
+ 2025-01-15 01:25:03 - [http-nio-8000-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 01:25:23 - [http-nio-8000-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/api/tasks/6", parameters={}
+ 2025-01-15 01:25:23 - [http-nio-8000-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#updateTask(int, TaskDto)
+ 2025-01-15 01:25:23 - [http-nio-8000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [TaskDto(id=0, title=Demo Task, description=Working Demo of the Project, status=PENDING, dueDate=2025 (truncated)...]
+ 2025-01-15 01:25:23 - [http-nio-8000-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 01:25:23 - [http-nio-8000-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [TaskDto(id=6, title=Demo Task, description=Working Demo of the Project, status=PENDING, dueDate=2025 (truncated)...]
+ 2025-01-15 01:25:23 - [http-nio-8000-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 01:25:28 - [http-nio-8000-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks/6", parameters={}
+ 2025-01-15 01:25:28 - [http-nio-8000-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getTaskById(int)
+ 2025-01-15 01:25:28 - [http-nio-8000-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 01:25:28 - [http-nio-8000-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [TaskDto(id=6, title=Demo Task, description=Working Demo of the Project, status=PENDING, dueDate=2025 (truncated)...]
+ 2025-01-15 01:25:28 - [http-nio-8000-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 01:25:40 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/tasks/6", parameters={}
+ 2025-01-15 01:25:40 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#deleteTask(int)
+ 2025-01-15 01:25:40 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 01:25:40 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+ 2025-01-15 01:25:40 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 204 NO_CONTENT
+ 2025-01-15 01:25:46 - [http-nio-8000-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks", parameters={}
+ 2025-01-15 01:25:46 - [http-nio-8000-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getAllTasks()
+ 2025-01-15 01:25:46 - [http-nio-8000-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 01:25:46 - [http-nio-8000-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[TaskDto(id=1, title=Buy groceries, description=Purchase milk, bread, and eggs, status=PENDING, dueD (truncated)...]
+ 2025-01-15 01:25:46 - [http-nio-8000-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 01:26:48 - [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+ 2025-01-15 01:26:48 - [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2025-01-15 01:26:48 - [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2025-01-15 01:26:48 - [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2025-01-15 01:26:48 - [RMI TCP Connection(14)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ 2025-01-15 01:26:48 - [RMI TCP Connection(14)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+ 2025-01-15 01:26:50 - [main] INFO  c.learn.ToDoList.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 15824 (F:\Github\ToDoList\backend\ToDoList\target\classes started by Nithin U in F:\Github\ToDoList\backend\ToDoList)
+ 2025-01-15 01:26:50 - [main] INFO  c.learn.ToDoList.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+ 2025-01-15 01:26:51 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+ 2025-01-15 01:26:51 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2025-01-15 01:26:51 - [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.learn.ToDoList.repository.TaskRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+ 2025-01-15 01:26:51 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
+ 2025-01-15 01:26:51 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+ 2025-01-15 01:26:51 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-01-15 01:26:51 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+ 2025-01-15 01:26:52 - [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8000 (http)
+ 2025-01-15 01:26:52 - [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+ 2025-01-15 01:26:52 - [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+ 2025-01-15 01:26:52 - [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2025-01-15 01:26:52 - [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1543 ms
+ 2025-01-15 01:26:52 - [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2025-01-15 01:26:52 - [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+ 2025-01-15 01:26:52 - [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-01-15 01:26:52 - [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-01-15 01:26:52 - [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+ 2025-01-15 01:26:53 - [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dd44289
+ 2025-01-15 01:26:53 - [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+ 2025-01-15 01:26:53 - [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+ 2025-01-15 01:26:53 - [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.27
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-01-15 01:26:54 - [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-01-15 01:26:54 - [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-01-15 01:26:54 - [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 2025-01-15 01:26:55 - [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+ 2025-01-15 01:26:55 - [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ 2025-01-15 01:26:55 - [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ 2025-01-15 01:26:55 - [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+ 2025-01-15 01:26:55 - [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8000 (http) with context path '/'
+ 2025-01-15 01:26:55 - [main] INFO  c.learn.ToDoList.ToDoListApplication - Started ToDoListApplication in 5.453 seconds (process running for 6.309)
+ 2025-01-15 01:27:53 - [http-nio-8000-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2025-01-15 01:27:53 - [http-nio-8000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-01-15 01:27:53 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+ 2025-01-15 01:27:53 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+ 2025-01-15 01:27:53 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+ 2025-01-15 01:27:53 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6c056020
+ 2025-01-15 01:27:53 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@36a8ebca
+ 2025-01-15 01:27:53 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+ 2025-01-15 01:27:53 - [http-nio-8000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+ 2025-01-15 01:27:53 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/tasks", parameters={}
+ 2025-01-15 01:27:53 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#createTask(TaskDto)
+ 2025-01-15 01:27:54 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [TaskDto(id=0, title=Demo Task, description=Working Demo of the Project, status=PENDING, dueDate=2025 (truncated)...]
+ 2025-01-15 01:27:54 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 01:27:54 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [TaskDto(id=7, title=Demo Task, description=Working Demo of the Project, status=PENDING, dueDate=2025 (truncated)...]
+ 2025-01-15 01:27:54 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 201 CREATED
+ 2025-01-15 01:28:01 - [http-nio-8000-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/tasks/7", parameters={}
+ 2025-01-15 01:28:01 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#deleteTask(int)
+ 2025-01-15 01:28:02 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+ 2025-01-15 01:28:02 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["Task has been deleted successfully"]
+ 2025-01-15 01:28:02 - [http-nio-8000-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 204 NO_CONTENT
+ 2025-01-15 01:28:10 - [http-nio-8000-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks/7", parameters={}
+ 2025-01-15 01:28:10 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getTaskById(int)
+ 2025-01-15 01:28:10 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.learn.ToDoList.aspect.ExceptionAdvice#handleTaskNotFoundException(TaskNotFoundException)
+ 2025-01-15 01:28:10 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+ 2025-01-15 01:28:10 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["Task not found with id 7"]
+ 2025-01-15 01:28:10 - [http-nio-8000-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.learn.ToDoList.exception.TaskNotFoundException: Task not found with id 7]
+ 2025-01-15 01:28:10 - [http-nio-8000-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+ 2025-01-15 01:28:15 - [http-nio-8000-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/tasks", parameters={}
+ 2025-01-15 01:28:15 - [http-nio-8000-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#getAllTasks()
+ 2025-01-15 01:28:15 - [http-nio-8000-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 01:28:15 - [http-nio-8000-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[TaskDto(id=1, title=Buy groceries, description=Purchase milk, bread, and eggs, status=PENDING, dueD (truncated)...]
+ 2025-01-15 01:28:15 - [http-nio-8000-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 01:28:58 - [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+ 2025-01-15 01:28:58 - [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2025-01-15 01:28:58 - [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2025-01-15 01:28:58 - [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2025-01-15 01:28:58 - [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ 2025-01-15 01:28:58 - [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+ 2025-01-15 01:29:01 - [main] INFO  c.learn.ToDoList.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 10156 (F:\Github\ToDoList\backend\ToDoList\target\classes started by Nithin U in F:\Github\ToDoList\backend\ToDoList)
+ 2025-01-15 01:29:01 - [main] INFO  c.learn.ToDoList.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+ 2025-01-15 01:29:02 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+ 2025-01-15 01:29:02 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+ 2025-01-15 01:29:02 - [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.learn.ToDoList.repository.TaskRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+ 2025-01-15 01:29:02 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+ 2025-01-15 01:29:02 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+ 2025-01-15 01:29:02 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-01-15 01:29:02 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+ 2025-01-15 01:29:03 - [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8000 (http)
+ 2025-01-15 01:29:03 - [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+ 2025-01-15 01:29:03 - [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+ 2025-01-15 01:29:03 - [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+ 2025-01-15 01:29:03 - [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2082 ms
+ 2025-01-15 01:29:03 - [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2025-01-15 01:29:04 - [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+ 2025-01-15 01:29:04 - [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-01-15 01:29:04 - [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-01-15 01:29:04 - [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+ 2025-01-15 01:29:05 - [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ab9d160
+ 2025-01-15 01:29:05 - [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+ 2025-01-15 01:29:06 - [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+ 2025-01-15 01:29:06 - [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.27
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-01-15 01:29:07 - [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-01-15 01:29:08 - [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-01-15 01:29:08 - [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 2025-01-15 01:29:08 - [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+ 2025-01-15 01:29:08 - [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ 2025-01-15 01:29:08 - [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ 2025-01-15 01:29:08 - [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+ 2025-01-15 01:29:09 - [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8000 (http) with context path '/'
+ 2025-01-15 01:29:09 - [main] INFO  c.learn.ToDoList.ToDoListApplication - Started ToDoListApplication in 8.406 seconds (process running for 9.334)
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2ddb6c71
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@26caf4b6
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/tasks", parameters={}
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#createTask(TaskDto)
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [TaskDto(id=0, title=Demo Task, description=Working Demo of the Project, status=PENDING, dueDate=2025 (truncated)...]
+ 2025-01-15 01:29:16 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ 2025-01-15 01:29:17 - [http-nio-8000-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [TaskDto(id=8, title=Demo Task, description=Working Demo of the Project, status=PENDING, dueDate=2025 (truncated)...]
+ 2025-01-15 01:29:17 - [http-nio-8000-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 201 CREATED
+ 2025-01-15 01:29:26 - [http-nio-8000-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/tasks/8", parameters={}
+ 2025-01-15 01:29:26 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.learn.ToDoList.controller.TaskController#deleteTask(int)
+ 2025-01-15 01:29:26 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+ 2025-01-15 01:29:26 - [http-nio-8000-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["Task has been deleted successfully"]
+ 2025-01-15 01:29:26 - [http-nio-8000-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+ 2025-01-15 01:36:39 - [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+ 2025-01-15 01:36:39 - [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+ 2025-01-15 01:36:39 - [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+ 2025-01-15 01:36:39 - [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2025-01-15 01:36:39 - [RMI TCP Connection(16)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ 2025-01-15 01:36:39 - [RMI TCP Connection(16)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+ 2025-01-15 01:36:43 - [main] INFO  c.learn.ToDoList.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 17404 (F:\Github\ToDoList\backend\ToDoList\target\classes started by Nithin U in F:\Github\ToDoList\backend\ToDoList)
+2025-01-15 01:36:43 - [main] INFO  c.learn.ToDoList.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 01:36:45 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-15 01:36:45 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-01-15 01:36:45 - [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.learn.ToDoList.repository.TaskRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-01-15 01:36:45 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 0 JDBC repository interfaces.
+2025-01-15 01:36:45 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-15 01:36:45 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-15 01:36:45 - [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2025-01-15 01:36:46 - [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8000 (http)
+2025-01-15 01:36:46 - [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-15 01:36:46 - [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-15 01:36:46 - [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-15 01:36:46 - [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3366 ms
+2025-01-15 01:36:47 - [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-15 01:36:47 - [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-15 01:36:47 - [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-15 01:36:48 - [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-15 01:36:48 - [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-15 01:36:49 - [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@126254ec
+2025-01-15 01:36:49 - [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-15 01:36:49 - [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-15 01:36:49 - [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.27
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-15 01:36:51 - [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-15 01:36:51 - [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15 01:36:52 - [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-15 01:36:52 - [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2025-01-15 01:36:52 - [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-15 01:36:52 - [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-15 01:36:52 - [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-15 01:36:53 - [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8000 (http) with context path '/'
+2025-01-15 01:36:53 - [main] INFO  c.learn.ToDoList.ToDoListApplication - Started ToDoListApplication in 11.181 seconds (process running for 12.785)
