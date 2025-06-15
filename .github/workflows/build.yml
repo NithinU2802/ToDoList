@@ -40,5 +40,5 @@ jobs:
         java-version: '21'
 
     - name: Build Backend with Maven
-      working-directory: backend
+      working-directory: backend/ToDoList
       run: mvn clean install
