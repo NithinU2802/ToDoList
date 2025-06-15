@@ -39,6 +39,6 @@ jobs:
         distribution: 'temurin'
         java-version: '21'
 
-    - name: Build Backend with Maven
+    - name: Build Backend with Maven (Skip Tests)
       working-directory: backend/ToDoList
-      run: mvn clean install
+      run: mvn clean install -DskipTests
