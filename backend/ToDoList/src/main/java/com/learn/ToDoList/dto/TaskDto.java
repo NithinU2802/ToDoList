@@ -9,9 +9,8 @@ import lombok.Data;
 
 @Data
 public class TaskDto {
-	
-	@NotNull(message = "ID cannot be null")
-	private int id;
+
+    private int id;
 	
 	@NotNull(message = "Title cannot be null")
     @Pattern(regexp = "^[a-zA-Z0-9\\s]{1,255}$", message = "Title must be alphanumeric and between 1 and 255 characters")
