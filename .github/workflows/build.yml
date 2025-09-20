@@ -24,6 +24,12 @@ jobs:
         echo "${{ secrets.DB_CA_PEM }}" > backend/src/main/resources/ca.pem
         node-version: '18'
 
+    # ---------- FRONTEND ----------
+    - name: Setup Node.js for Frontend
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
     - name: Install Frontend Dependencies (with legacy peer deps)
       working-directory: frontend
       run: npm install --legacy-peer-deps
