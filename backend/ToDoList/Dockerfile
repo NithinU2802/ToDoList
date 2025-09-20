@@ -1,14 +1,13 @@
-# Use OpenJDK 21 as base image
-FROM eclipse-temurin:21-jdk-alpine
-
-# Set working directory
+# Stage 1: build JAR
+FROM maven:3.9.3-eclipse-temurin-21 AS build
 WORKDIR /app
+COPY pom.xml .
+COPY src ./src
+RUN mvn clean package -DskipTests
 
-# Copy the built JAR file
-COPY target/*.jar app.jar
-
-# Expose port 8080 (Spring Boot default)
+# Stage 2: run app
+FROM eclipse-temurin:21-jdk-alpine
+WORKDIR /app
+COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
-
-# Run the Spring Boot application
 ENTRYPOINT ["java","-jar","app.jar"]
