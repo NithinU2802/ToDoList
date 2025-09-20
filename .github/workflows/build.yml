@@ -18,10 +18,10 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
-    # ---------- FRONTEND ----------
-    - name: Setup Node.js for Frontend
-      uses: actions/setup-node@v4
-      with:
+    - name: Write CA PEM
+      run: |
+        mkdir -p backend/src/main/resources
+        echo "${{ secrets.DB_CA_PEM }}" > backend/src/main/resources/ca.pem
         node-version: '18'
 
     - name: Install Frontend Dependencies (with legacy peer deps)
