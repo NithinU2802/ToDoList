@@ -22,7 +22,6 @@ jobs:
       run: |
         mkdir -p backend/src/main/resources
         echo "${{ secrets.DB_CA_PEM }}" > backend/src/main/resources/ca.pem
-        node-version: '18'
 
     # ---------- FRONTEND ----------
     - name: Setup Node.js for Frontend
