@@ -3,7 +3,7 @@ name: Deploy React Frontend to GitHub Pages
 on:
   push:
     branches:
-      - main   
+      - main
 
 jobs:
   build-and-deploy:
@@ -11,7 +11,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: frontend  
+        working-directory: frontend
 
     steps:
       - name: Checkout repository
@@ -26,6 +26,8 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build project
+        env:
+          REACT_APP_API_BASE_URL: ${{ secrets.BACKEND_API_BASE_URL }}
         run: npm run build
 
       - name: Deploy to GitHub Pages
